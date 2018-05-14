@@ -10,6 +10,7 @@ function getAndPrintHTMLChunks() {
     response.setEncoding('utf8');
 
     response.on('data', function(data) {
+      console.log('chunk ')
       console.log('Chunk Received:', data);
     })
 
